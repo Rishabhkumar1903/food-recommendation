@@ -30,7 +30,7 @@ def set_bg_local(image_file):
     )
 
 # 👇 Put your local image filename here (must be in same folder as app)
-set_bg_local("E:\ML Images\Sentiment-Analysis.jpg")
+set_bg_local("Sentiment-Analysis.jpg")
 
 st.markdown("""
     <div style="background-color:brown;border-radius:10px;text-align:center;">
@@ -59,7 +59,7 @@ st.markdown("""
 
 # Sidebar content
 with st.sidebar:
-    st.sidebar.image("E:\ML Images\Fast-food.jpg")
+    st.sidebar.image("Fast-food.jpg")
     st.sidebar.text("Let food be thy medicine and medicine be the food." )
     st.sidebar.header("💬CONTACT US")
     st.sidebar.text("📞8809972414")
@@ -128,4 +128,5 @@ if path is not None:
             st.dataframe(df, width=500)
         else:
             st.markdown("### 🤖 Predicted Sentiment")
+
             st.info("Click **Predict** to analyze sentiment.")
